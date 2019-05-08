@@ -1,7 +1,7 @@
 # android car Driving mode Demo
 
-![image](https://github.com/xintanggithub/android-car-Driving-mode/blob/master/1.png)
-![image](https://github.com/xintanggithub/android-car-Driving-mode/blob/master/2.png)
+![image]()
+![image]()
 
 ### 参考文档
 
