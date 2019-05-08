@@ -43,8 +43,8 @@ class MainActivity : AppCompatActivity() {
         carHelper?.start()
     }
 
-    override fun onStop() {
-        super.onStop()
+    override fun onPause() {
+        super.onPause()
         carHelper?.stop()
     }
 
