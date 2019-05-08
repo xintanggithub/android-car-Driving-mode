@@ -30,8 +30,6 @@ lateinit var carHelper: CarUxRestrictionsHelper
 
 #### 2. 添加驾驶模式变化监听 OnUxRestrictionsChangedListener
 
-##### 注意
-
 ```
         carHelper = CarUxRestrictionsHelper(this@MainActivity,
             OnUxRestrictionsChangedListener {
@@ -48,6 +46,8 @@ lateinit var carHelper: CarUxRestrictionsHelper
                     "  \n 可向用户显示的最大允许内容：$d \n 长文本限制时可显示的最大长度：$e"
             })
 ```
+
+##### 注意
 
 - 绑定了OnUxRestrictionsChangedListener之后，CarUxRestrictionsHelper会马上回调一次，本次回调内容为当前的信息
 
