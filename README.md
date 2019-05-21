@@ -20,6 +20,21 @@
 
 - androidx和support库是不兼容的，需要将support库转为Androidx，Android studio有提供该功能。[操作参考](https://www.jianshu.com/p/41de8689615d)
 
+- AndroidManifest.xml配置 一定！一定！一定！要记得加这个meta-data属性，是所有的activity，这个是告诉系统，这个activity的驾驶模式由我自己来处理
+    ```
+            <activity android:name=".MainActivity">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+    
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+                <!-- 下面的meta-data一定要加上->
+                <meta-data
+                    android:name="distractionOptimized"
+                    android:value="true" />
+            </activity>
+    ```
+
 ### 使用简介
 
 #### 1. 使用CarUx辅助类 CarUxRestrictionsHelper
